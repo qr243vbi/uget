@@ -58,6 +58,19 @@
 #include <sys/time.h>
 #endif
 
+
+void usleep_custom(unsigned int microseconds) {
+    struct timespec req = {0};
+
+    // Convert microseconds into seconds and nanoseconds
+    req.tv_sec = microseconds / 1000000;  // seconds
+    req.tv_nsec = (microseconds % 1000000) * 1000;  // nanoseconds
+
+    // Call nanosleep to sleep for the desired amount of time
+    nanosleep(&req, NULL);
+}
+
+
 // ----------------------------------------------------------------------------
 // Time
 

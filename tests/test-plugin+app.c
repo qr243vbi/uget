@@ -42,13 +42,15 @@
 #include <UgetPluginMedia.h>
 #include <UgetPluginMega.h>
 #include <UgetPluginEmpty.h>
+#include <UgUtil.h>
+
 
 #if defined _WIN32 || defined _WIN64
 #include <windows.h>
 #define  ug_sleep                 Sleep
 #else
 #include <unistd.h>               // usleep()
-#define  ug_sleep(millisecond)    usleep (millisecond * 1000)
+#define  ug_sleep(millisecond)    usleep_custom (millisecond * 1000)
 #endif // _WIN32 || _WIN64
 
 // ----------------------------------------------------------------------------

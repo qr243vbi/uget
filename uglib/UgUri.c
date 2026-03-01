@@ -39,6 +39,9 @@
 #include <UgUri.h>
 #include <UgUtil.h>
 
+#ifdef __unix__
+#include <strings.h>  // For POSIX-based systems
+#endif
 // ----------------------------------------------------------------------------
 // UgUri
 

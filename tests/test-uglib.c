@@ -46,6 +46,7 @@
 #include <UgSLink.h>
 #include <UgString.h>
 #include <UgHtml.h>
+#include <UgUtil.h>
 
 #if defined _WIN32 || defined _WIN64
 #include <UgUtil.h>
