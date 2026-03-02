@@ -184,11 +184,11 @@ summary({
 if host_system == 'windows'
 else
 install_data('uget-gtk.desktop', 
-    install_dir: get_option('datadir') / 'applications' / 'uget-gtk.desktop')
+    install_dir: get_option('datadir') / 'applications' )
 install_data('pixmaps' / 'logo.png', 
-    install_dir: get_option('datadir') / 'pixmaps' / 'uget' / 'logo.png')
+    install_dir: get_option('datadir') / 'pixmaps' / 'uget' )
 install_data('sounds' / 'notification.wav', 
-    install_dir: get_option('datadir') / 'sounds' / 'uget' / 'notification.wav')
+    install_dir: get_option('datadir') / 'sounds' / 'uget' )
 install_subdir('pixmaps' / 'icons' / 'hicolor', 
     install_dir: get_option('datadir') / 'icons')
 endif
