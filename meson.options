@@ -1,13 +1,13 @@
 # uGet Build Options
 
 # Optional features - auto-detect by default
-option('notify', type: 'feature', value: 'true',
+option('notify', type: 'feature', value: 'enabled',
        description: 'Enable libnotify desktop notifications')
 
-option('gstreamer', type: 'feature', value: 'true',
+option('gstreamer', type: 'feature', value: 'enabled',
        description: 'Enable GStreamer audio support')
 
-option('appindicator', type: 'feature', value: 'true',
+option('appindicator', type: 'feature', value: 'enabled',
        description: 'Enable AppIndicator system tray support (Unix only)')
 
 # Opt-in features
