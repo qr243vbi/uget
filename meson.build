@@ -15,6 +15,13 @@ project('uget', 'c',
 cc = meson.get_compiler('c')
 host_system = host_machine.system()
 
+
+# Unix specific data
+if host_system == 'windows'
+else
+subdir('po')
+endif
+
 # ============================================================================
 # Required Dependencies
 # ============================================================================
@@ -180,7 +187,7 @@ summary({
 
 
 
-# Windows-specific libraries
+# Unix specific data
 if host_system == 'windows'
 else
 install_data('uget-gtk.desktop', 
