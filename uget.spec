@@ -65,6 +65,6 @@ category having an independent configuration.
 %{_datadir}/sounds/%{name}/notification.wav
 
 %files lang
-
+%{_datadir}/locale/**/*
 
 %changelog
