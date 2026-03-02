@@ -23,7 +23,7 @@ Summary:        Download Manager with a GTK+ user interface
 License:        LGPL-2.1-or-later
 Group:          Productivity/Networking/Web/Utilities
 URL:            http://github.com/qr243vbi/uget
-Source0:        %{name}-%{version}.tar.gz
+Source0:        %{name}-%{version}.tar
 BuildRequires:  meson
 BuildRequires:  update-desktop-files
 BuildRequires:  pkgconfig(appindicator3-0.1)
