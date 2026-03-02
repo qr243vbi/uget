@@ -3,6 +3,7 @@ uGet 2.2.4: (2026-03-01)
 2. migrate to meson build system
 3. legacy cleanups
 4. fix build on unix
+5. currently only *bsd/linux is supported 
 
 uGet 2.2.3: (2020-01-01)
 1. add parser for YouTube recently changed field.
