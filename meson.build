@@ -177,3 +177,7 @@ summary({
   'OpenSSL': use_openssl and not use_gnutls,
   'GnuTLS': use_gnutls,
 }, section: 'Crypto Backend')
+
+
+install(TARGETS uget_gtk DESTINATION 'bin')
+
