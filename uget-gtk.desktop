@@ -6,5 +6,6 @@ Exec=uget-gtk %u
 Icon=uget-icon
 Terminal=false
 Type=Application
+StartupWMClass=uget-gtk
 Categories=Network;FileTransfer;
 Keywords=filetransfer;download files;download manager;
