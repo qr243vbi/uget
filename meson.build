@@ -15,6 +15,13 @@ project('uget', 'c',
 cc = meson.get_compiler('c')
 host_system = host_machine.system()
 
+
+# Unix specific data
+if host_system == 'windows'
+else
+subdir('po')
+endif
+
 # ============================================================================
 # Required Dependencies
 # ============================================================================
@@ -198,3 +205,18 @@ summary({
   'OpenSSL': use_openssl and not use_gnutls,
   'GnuTLS': use_gnutls,
 }, section: 'Crypto Backend')
+
+
+
+# Unix specific data
+if host_system == 'windows'
+else
+install_data('uget-gtk.desktop', 
+    install_dir: get_option('datadir') / 'applications' )
+install_data('pixmaps' / 'logo.png', 
+    install_dir: get_option('datadir') / 'pixmaps' / 'uget' )
+install_data('sounds' / 'notification.wav', 
+    install_dir: get_option('datadir') / 'sounds' / 'uget' )
+install_subdir('pixmaps' / 'icons' / 'hicolor', 
+    install_dir: get_option('datadir') / 'icons')
+endif

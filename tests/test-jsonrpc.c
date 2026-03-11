@@ -39,6 +39,7 @@
 #include <UgJsonrpc.h>
 #include <UgJsonrpcCurl.h>
 #include <UgJsonrpcSocket.h>
+#include <UgUtil.h>
 
 #include <UgetAria2.h>
 #include <curl/curl.h>

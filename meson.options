@@ -1,13 +1,13 @@
 # uGet Build Options
 
 # Optional features - auto-detect by default
-option('notify', type: 'feature', value: 'auto',
+option('notify', type: 'feature', value: 'enabled',
        description: 'Enable libnotify desktop notifications')
 
-option('gstreamer', type: 'feature', value: 'auto',
+option('gstreamer', type: 'feature', value: 'enabled',
        description: 'Enable GStreamer audio support')
 
-option('appindicator', type: 'feature', value: 'auto',
+option('appindicator', type: 'feature', value: 'enabled',
        description: 'Enable AppIndicator system tray support (Unix only)')
 
 # Opt-in features
@@ -22,7 +22,7 @@ option('gnutls', type: 'boolean', value: false,
        description: 'Use GnuTLS/libgcrypt for crypto instead of OpenSSL')
 
 # Unix domain socket for JSON-RPC
-option('unix_socket', type: 'boolean', value: false,
+option('unix_socket', type: 'boolean', value: true,
        description: 'Use UNIX domain socket for JSON-RPC')
 
 # RSS notify feature

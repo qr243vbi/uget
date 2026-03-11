@@ -38,6 +38,7 @@
 #include <string.h>
 #include <UgArray.h>
 #include <UgetNode.h>
+#include <UgUtil.h>
 
 #include <UgString.h>
 #include <UgData.h>

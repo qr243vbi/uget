@@ -47,6 +47,7 @@
 #include <UgEntry.h>
 #include <UgValue.h>
 #include <UgJson-custom.h>
+#include <UgUtil.h>
 
 // ----------------------------------------------------------------------------
 // WorkedId

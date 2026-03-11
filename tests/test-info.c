@@ -39,6 +39,7 @@
 #include <string.h>
 #include <UgInfo.h>
 #include <UgEntry.h>
+#include <UgUtil.h>
 
 // ----------------------------------------------------------------------------
 // Test1
