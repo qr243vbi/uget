@@ -32,7 +32,7 @@ BuildRequires:  pkgconfig(libgcrypt)
 BuildRequires:  pkgconfig(glib-2.0) >= 2.32
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(gstreamer-1.0)
-BuildRequires:  pkgconfig(gtk+-4.0)
+BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libnotify)
 Requires:       aria2
 
