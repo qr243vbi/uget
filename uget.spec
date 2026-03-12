@@ -17,7 +17,7 @@
 
 
 Name:           uget
-Version:        2.2.4
+Version:        2.2.5
 Release:        0
 Summary:        Download Manager with a GTK+ user interface
 License:        LGPL-2.1-or-later
