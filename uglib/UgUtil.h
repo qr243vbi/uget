@@ -41,7 +41,7 @@
 #include <stdint.h>
 #include <UgList.h>
 #include <strings.h>  
-void usleep_custom(unsigned int microseconds) ;
+int usleep_custom(unsigned int microseconds) ;
 #define usleep usleep_custom
 #ifdef __cplusplus
 extern "C" {

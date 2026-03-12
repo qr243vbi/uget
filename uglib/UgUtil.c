@@ -59,7 +59,7 @@
 #endif
 
 
-void usleep_custom(unsigned int microseconds) {
+int usleep_custom(unsigned int microseconds) {
     struct timespec req = {0};
 
     // Convert microseconds into seconds and nanoseconds
@@ -68,6 +68,7 @@ void usleep_custom(unsigned int microseconds) {
 
     // Call nanosleep to sleep for the desired amount of time
     nanosleep(&req, NULL);
+	return microseconds;
 }
 
 
