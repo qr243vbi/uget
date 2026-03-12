@@ -1,7 +1,7 @@
 #
 # spec file for package uget
 #
-# Copyright (c) 2020 SUSE LLC
+# Copyright (c) 2026 SUSE LLC
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -32,7 +32,7 @@ BuildRequires:  pkgconfig(libgcrypt)
 BuildRequires:  pkgconfig(glib-2.0) >= 2.32
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(gstreamer-1.0)
-BuildRequires:  pkgconfig(gtk+-3.0) >= 3.4
+BuildRequires:  pkgconfig(gtk+-4.0)
 BuildRequires:  pkgconfig(libnotify)
 Requires:       aria2
 
