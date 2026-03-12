@@ -15,11 +15,9 @@ project('uget', 'c',
 cc = meson.get_compiler('c')
 host_system = host_machine.system()
 
-
-# Unix specific data
-if host_system == 'windows'
-else
-subdir('po')
+# Translations (Unix only — Windows uses embedded resources)
+if host_system != 'windows'
+  subdir('po')
 endif
 
 # ============================================================================
@@ -164,11 +162,6 @@ subdir('uglib')
 subdir('uget')
 subdir('ui-gtk')
 subdir('tests')
-
-# Translations (Unix only — Windows uses embedded resources)
-if host_system != 'windows'
-  subdir('po')
-endif
 
 # Install data files
 install_data('uget-gtk.desktop',
