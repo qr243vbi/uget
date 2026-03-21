@@ -66,6 +66,11 @@ extern "C" {
 #define	UGTK_APP_ACCEL_PATH_OPEN_F      "<uGet>/Download/OpenFolder"
 #define	UGTK_APP_ACCEL_PATH_SWITCH      "<uGet>/Download/SwitchState"
 
+#define	UGET_URL_WEBSITE    "https://github.com/qr243vbi/uget"
+#define UGET_WIKI_PAGE UGET_URL_WEBSITE "/wiki"
+#define UGET_ISSUES_PAGE UGET_URL_WEBSITE "/issues"
+#define UGET_RELEASES_PAGE UGET_URL_WEBSITE "/releases"
+
 typedef struct UgtkApp        UgtkApp;
 
 struct UgtkApp

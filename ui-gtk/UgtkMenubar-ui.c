@@ -592,15 +592,15 @@ static void open_url_in_browser (const char* url) {
 }
 
 static void on_action_help_documentation (GSimpleAction *action, GVariant *parameter, gpointer user_data) {
-    open_url_in_browser ("https://github.com/ozgur-as/uget/wiki");
+    open_url_in_browser (UGET_WIKI_PAGE);
 }
 
 static void on_action_help_report_bug (GSimpleAction *action, GVariant *parameter, gpointer user_data) {
-    open_url_in_browser ("https://github.com/ozgur-as/uget/issues");
+    open_url_in_browser (UGET_ISSUES_PAGE);
 }
 
 static void on_action_help_check_updates (GSimpleAction *action, GVariant *parameter, gpointer user_data) {
-    open_url_in_browser ("https://github.com/ozgur-as/uget/releases");
+    open_url_in_browser (UGET_RELEASES_PAGE);
 }
 
 static void on_action_help_about (GSimpleAction *action, GVariant *parameter, gpointer user_data) {
@@ -653,7 +653,7 @@ static void on_action_completion_remember (GSimpleAction *action, GVariant *para
 }
 
 static void on_action_completion_help (GSimpleAction *action, GVariant *parameter, gpointer user_data) {
-    open_url_in_browser ("https://github.com/ozgur-as/uget/wiki");
+    open_url_in_browser (UGET_WIKI_PAGE);
 }
 
 // Category move actions

@@ -41,13 +41,12 @@ static const char	uget_license[] =
 
 #include <glib/gi18n.h>
 
-#define	UGET_URL_WEBSITE    "https://github.com/ozgur-as/uget"
-
 // static data
-static const gchar*  uget_authors[] = { "Ozgur As (maintainer)", "C.H. Huang (original author)", NULL };
+static const gchar*  uget_authors[] = { "qr243vbi (maintainer)", "Ozgur As (maintainer)", "C.H. Huang (original author)", NULL };
 static const gchar*  uget_artists[] = { "Michael Tunnell (visuex.com)", NULL };
 static const gchar*  uget_comments  = N_("Download Manager");
-static const gchar*  uget_copyright = "Copyright (C) 2025-2026 Ozgur As\n"
+static const gchar*  uget_copyright = "Copyright (C) 2026 qr243vbi\n"
+									   "Copyright (C) 2025-2026 Ozgur As\n"
                                        "Copyright (C) 2005-2020 C.H. Huang";
 static const gchar*  translator_credits = N_("translator-credits");
 
