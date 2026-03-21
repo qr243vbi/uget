@@ -8,7 +8,7 @@ A lightweight, full-featured download manager for Linux and Windows. Built with 
 
 ---
 
-![uGet screenshot](doc/screenshot.png)
+![uGet screenshot](https://raw.githubusercontent.com/qr243vbi/qr243vbi_images/refs/heads/uget/screenshot.png)
 
 ## Features
 
