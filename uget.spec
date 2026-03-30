@@ -34,6 +34,7 @@ BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(gstreamer-1.0)
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libnotify)
+BuildRequires:  filesystem
 Requires:       aria2
 
 %description
