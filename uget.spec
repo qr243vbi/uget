@@ -42,7 +42,15 @@ Uget is a download manager written with GTK+. It supports
 pause and resume, and the ability to classify download, with every
 category having an independent configuration.
 
-%lang_package
+%package lang 
+Summary: Translations for package %{name} 
+Group: System/Localization 
+Requires: %{name} = %{version}  
+Provides: %{name}-lang-all = %{version} 
+BuildArch: noarch 
+
+%description lang 
+Provides translations for the "%{name}" package.
 
 %prep
 %autosetup -p1
