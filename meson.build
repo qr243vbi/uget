@@ -2,9 +2,9 @@
 # Migrated from Autotools (configure.ac)
 
 project('uget', 'c',
-  version: '2.3.0-rc1',
+  version: '2.2.6',
   license: 'LGPL-2.1-or-later',
-  meson_version: '>= 1.1.0',
+  meson_version: '>= 1.0.0',
   default_options: [
     'c_std=c11',
     'warning_level=1',
@@ -24,9 +24,9 @@ endif
 # Required Dependencies
 # ============================================================================
 
-glib_dep = dependency('glib-2.0', version: '>= 2.86.0', required: true)
-gtk_dep = dependency('gtk4', version: '>= 4.20.0', required: true)
-curl_dep = dependency('libcurl', version: '>= 8.11.0', required: true)
+glib_dep = dependency('glib-2.0', version: '>= 2.10.0', required: true)
+gtk_dep = dependency('gtk4', version: '>= 4.1.0', required: true)
+curl_dep = dependency('libcurl', version: '>= 7.1.0', required: true)
 threads_dep = dependency('threads', required: true)
 
 # ============================================================================
@@ -56,7 +56,7 @@ endif
 
 # pwmd - Password manager daemon (opt-in, fails if enabled but not found)
 pwmd_opt = get_option('pwmd')
-libpwmd_dep = dependency('libpwmd-8.0', version: '>= 8.3.0', required: pwmd_opt)
+libpwmd_dep = dependency('libpwmd-8.0', version: '>= 7.3.0', required: pwmd_opt)
 have_libpwmd = libpwmd_dep.found()
 
 # ============================================================================
